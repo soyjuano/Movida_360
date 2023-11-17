@@ -8,15 +8,17 @@ const App = () => {
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
 
-      
-        <div className='relative z-10'>
-        <Navbar />
-        <Hero />
+       {/* Video background for Navbar and Hero */}
+      {/*  <div className="bg-cover bg-no-repeat bg-right-top h-screen relative">
+          <video className="w-full h-full object-cover absolute inset-0" src={camera360} autoPlay loop muted />
+        </div> */}
+
+        <div className='relative z-10' src={camera360} autoPlay loop muted>
+          <Navbar />
+          <Hero />
+
         </div>
-        {/* Video background for Navbar and Hero */}
-    <div className='absolute inset-0 w-full max-h-screen object-cover z-0'>
-      <video src={camera360} autoPlay loop muted className='w-full h-full object-cover' />
-    </div>
+
         <About />
         <Experience />
         <Tech />

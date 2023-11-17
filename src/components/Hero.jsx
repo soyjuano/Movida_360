@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import camera360Full from "../assets/camera360Full.mp4";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
 
-    
+    <video src={camera360Full} autoPlay loop muted class="video-bg"/> 
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
+      
+      
         
         {/* -------BARRA ILUSTRATIVA VERTICAL----------- */}
 
@@ -20,6 +23,7 @@ const Hero = () => {
         </div> */}
 
         <div>
+        
           <h1 className={`${styles.heroHeadText} text-white`}>
             Dale un giro a tu <span className='pink-text-gradient' /* 'text-[#915EFF]' */>Fiesta!</span>
           </h1>
@@ -29,6 +33,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
+ 
 
      {/*  <ComputersCanvas />
 
