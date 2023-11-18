@@ -13,7 +13,7 @@ const App = () => {
           <video className="w-full h-full object-cover absolute inset-0" src={camera360} autoPlay loop muted />
         </div> */}
 
-        <div className='relative z-10' src={camera360} autoPlay loop muted>
+        <div className='relative z-10'>
           <Navbar />
           <Hero />
 

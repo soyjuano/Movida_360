@@ -2,40 +2,40 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import camera360Full from "../assets/camera360Full.mp4";
+import camera360 from "../assets/camera360.mp4";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
 
-    <video src={camera360Full} autoPlay loop muted class="video-bg"/> 
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-      
-      
-        
-        {/* -------BARRA ILUSTRATIVA VERTICAL----------- */}
+      {/* Video para pantallas grandes (mayores o iguales a lg) */}
+      <video src={camera360Full} autoPlay loop muted className="video-bg hidden lg:block w-full h-full object-cover" />
 
-       {/*  <div className='flex flex-col justify-center items-center mt-5'>
+      {/* Video para pantallas pequeñas (menores a lg) */}
+      <video src={camera360} autoPlay loop muted className="video-bg lg:hidden w-full h-full object-cover" />
+
+      <div
+        className={`absolute inset-x-0 bottom-[80px] max-w-full mx-auto flex  gap-5 flex-col items-center justify-center`}
+      >
+       {/* -------BARRA ILUSTRATIVA VERTICAL----------- */}
+
+        {/*  <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div> */}
 
         <div>
-        
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Dale un giro a tu <span className='pink-text-gradient' /* 'text-[#915EFF]' */>Fiesta!</span>
+          <h1 className={`${styles.heroHeadText} text-white text-center`}>
+            Dale un <span className='pink-text-gradient' /* 'text-[#915EFF]' */>giro</span> a tu Fiesta!
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Plataforma de video 360  <br className='sm:block hidden' />
-            para tu evento
+          <p className={`${styles.heroSubText} mt-2 text-white-100 text-center`}>
+            Plataforma de video 360 para tu evento
           </p>
         </div>
       </div>
- 
 
-     {/*  <ComputersCanvas />
+      {/*  <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
@@ -54,6 +54,7 @@ const Hero = () => {
           </div>
         </a>
       </div> */}
+
     </section>
   );
 };
