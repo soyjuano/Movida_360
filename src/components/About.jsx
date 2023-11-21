@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-quaternary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
@@ -37,29 +37,39 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+    <section className={`relative w-full min-h-min mx-auto text-center`}>
+      <motion.div variants={textVariant()} >
+        <p className={styles.sectionSubText} >Movida 360</p>
+        <h2 className={styles.sectionHeadText} >Creadores de recuerdos</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-full leading-[30px] text-center'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        ¡Convertimos tus momentos en recuerdos inolvidables que van más allá de las fotos! 
+        Somos especialistas en hacer que tus fiestas sean memorables, ya sea una boda, un cumple, 
+        una feria o un corporativo. ¡Nosotros estamos en todas!
+
+        Con nuestra plataforma 360, tu evento se transforma en una experiencia única y súper divertida. 
+        Capturamos todos los ángulos, todos los momentos épicos y todos los detalles que hacen que tu 
+        celebración sea épica. ¡Te prometemos que tus recuerdos serán la envidia de todos!
+
+        No importa el plan que tengas, estamos listos para convertirlo en algo inolvidable. 
+        <span className='pink-text-gradient mb-10' /* 'text-[#915EFF]' */> ¡Dale un giro a tu fiesta con nosotros!</span>
+       
+        <p className={`${styles.heroSubText} mt-12 text-white-100 text-center`}>
+            Por qué Elegirnos?
+          </p>
+
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+       <div className='mt-14 flex flex-wrap gap-10 justify-evenly'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

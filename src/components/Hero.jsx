@@ -30,7 +30,7 @@ const Hero = () => {
             Dale un <span className='pink-text-gradient' /* 'text-[#915EFF]' */>giro</span> a tu Fiesta!
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 text-center`}>
-            Plataforma de video 360 para tu evento
+            Alquiler de plataforma de video 360 para tu evento
           </p>
         </div>
       </div>
