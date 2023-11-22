@@ -23,6 +23,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  camera_icon,
+  video_icon,
+  qr_icon,
+  edicion_icon,
+  tool_icon,
+  share_icon,
+  working_icon,
 } from "../assets";
 
 export const navLinks = [
@@ -32,7 +39,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Como Funciona",
+    title: "Viví la experiencia",
   },
   {
     id: "contact",
@@ -43,19 +50,19 @@ export const navLinks = [
 const services = [
   {
     title: "Cámara de última generación",
-    icon: web,
+    icon: camera_icon,
   },
   {
     title: "Videos totalmente personalizados",
-    icon: mobile,
+    icon: video_icon,
   },
   {
-    title: "Ediciónes en el momento",
-    icon: backend,
+    title: "Ediciones en el momento",
+    icon: edicion_icon,
   },
   {
     title: "Código QR para compartir",
-    icon: creator,
+    icon: qr_icon,
   },
 ];
 
@@ -116,55 +123,56 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Armado ",
+    company_name: "¿Cómo funciona?",
+    icon: tool_icon,
+    iconBg: "purple",
+    /* date: "March 2020 - April 2021", */
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Colocamos la plataforma 360 y las columnas de iluminación.",
+      "Damos la bienvenida a los asistentes y les ofrecemos complementos, pistolas lanzadoras de billetes y efectos de burbujas.",
+      "Los invitados se podrán montar en la plataforma giratoria y hacer sus mejores poses.",
+      "¡Es el momento perfecto para liberar toda su imaginación!.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Grabación",
+    company_name: "Video 360",
+    icon: camera_icon,
+    iconBg: "purple",
+    /* date: "Jan 2021 - Feb 2022", */
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "La filmación se realiza mediante una cámara que rota alrededor de la tarima.",
+      "Los asistentes disfrutan de la música, lanzan confeti y burbujas en el entorno.",
+      "Podrás personalizar el video eligiendo la velocidad, los tramos e incluyendo el logotipo de tu empresa donde quieras.",
+      "Videos de alta definición con cámara de última generación.",
+      "Luego de grabar el video podrán visualizarlo y enviarlo vía email.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Souvenirs",
+    company_name: "Compartir el contenido",
+    icon: share_icon,
+    iconBg: "purple",
+   /*  date: "Jan 2022 - Jan 2023", */
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Una vez que el video se proyecta en la pantalla, se muestra un código QR.",
+      "Los asistentes escanean el código y obtienen acceso a un archivo de vídeo, que podrán descargar directamente a sus teléfonos móviles al instante.",
+      "¡Desde nuestra pantalla hasta tu correo electrónico! Será sencillo, entretenido y único, para que tu evento permanezca inolvidable.",
+      "Al concluir la fiesta, el archivo se entrega al encargado/a del evento.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Movida 360",
+    company_name: "¿Por qué con nosotros?",
+    icon: working_icon,
+    iconBg: "purple",
+    /* date: "Jan 2023 - Present", */
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Utilizamos software y equipo de alta calidad que nos permite brindar un excelente servicio.",
+      "Aprovechamos al máximo las capacidades de la cámara 360 junto con la magia del efecto Slow Motion para obtener un resultado genial.",
+      "Nos esmeramos en cuidar cada detalle y resaltar la estética al máximo, creando así una experiencia única y memorable en cada aspecto.",
+      "Realizamos la edición de los videos en tiempo real, permitiendo que tus invitados los descarguen instantáneamente durante el evento para una experiencia aún más inolvidable.",
     ],
   },
 ];

@@ -39,7 +39,7 @@ const About = () => {
   return (
     <section className={`relative w-full min-h-min mx-auto text-center`}>
       <motion.div variants={textVariant()} >
-        <p className={styles.sectionSubText} >Movida 360</p>
+      <p className= {styles.sectionSubText} >Movida 360</p>
         <h2 className={styles.sectionHeadText} >Creadores de recuerdos</h2>
       </motion.div>
 

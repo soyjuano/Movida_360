@@ -2,6 +2,13 @@ import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
+import camera_icon from "./camera_icon.png";
+import video_icon from "./video_icon.png";
+import edicion_icon from "./mask_icon.png";
+import qr_icon from "./qr_icon.png";
+import tool_icon from "./tool_icon.png";
+import share_icon from "./share_icon.png";
+import working_icon from "./working_icon.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -35,6 +42,13 @@ export {
   backend,
   creator,
   mobile,
+  camera_icon,
+  video_icon,
+  edicion_icon,
+  qr_icon,
+  tool_icon,
+  share_icon,
+  working_icon,
   web,
   github,
   menu,
