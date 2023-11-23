@@ -11,6 +11,7 @@ import share_icon from "./share_icon.png";
 import working_icon from "./working_icon.png";
 import web from "./web.png";
 import github from "./github.png";
+import insta from "./insta_icon.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -35,7 +36,12 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import luisysofi from "./luisysofi.jpg";
+import joseycaro from "./joseycaro.jpg";
 import tripguide from "./tripguide.png";
+import starwars from "./starwars.jpg";
+import graduacion from "./graduacion.jpg";
+import camiygiorgian from "./camiygiorgian.jpg";
 
 export {
   logo,
@@ -51,6 +57,7 @@ export {
   working_icon,
   web,
   github,
+  insta,
   menu,
   close,
   css,
@@ -72,5 +79,10 @@ export {
   tesla,
   carrent,
   jobit,
+  joseycaro,
+  luisysofi,
   tripguide,
+  starwars,
+  graduacion,
+  camiygiorgian,
 };

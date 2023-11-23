@@ -21,7 +21,12 @@ import {
   shopify,
   carrent,
   jobit,
+  luisysofi,
+  joseycaro,
   tripguide,
+  starwars,
+  camiygiorgian,
+  graduacion,
   threejs,
   camera_icon,
   video_icon,
@@ -206,67 +211,72 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Fiesta con Luis y Sofi",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Gracias por elegir nuestro servicio, la fiesta fué muy divertida y salió genial. ¡Felicitaciones!",
     tags: [
       {
-        name: "react",
+        name: "diversión",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "360",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: luisysofi,
+    source_code_link: "https://www.instagram.com/reel/Cr_iT9SJMkG/?igshid=NmJiYWZiY2E0Mg==",
   },
   {
-    name: "Job IT",
+    name: "Casamiento: Jose y Caro",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Hace como Jose y Caro. ¡Dale una vuelta divertida a tu fiesta con nuestras plataformas 360!",
     tags: [
       {
-        name: "react",
+        name: "momentos",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "amistad",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: joseycaro,
+    source_code_link: "https://www.instagram.com/reel/ClzfOzuprYe/?igshid=NmJiYWZiY2E0Mg==",
   },
   {
-    name: "Trip Guide",
+    name: "Exhibición Promocional",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "En esta ocasión nos acompañaron los personajes de Darth Vader y Stormtroopers!",
     tags: [
       {
-        name: "nextjs",
+        name: "starwars",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "marketing",
         color: "green-text-gradient",
       },
+    ],
+    image: starwars,
+    source_code_link: "https://www.instagram.com/reel/Cuiv3ElNzP1/?igshid=NmJiYWZiY2E0Mg==",
+  },
+  {
+    name: "Fiesta de Graduación",
+    description:
+      "Capturamos cada momento, ¡registrando recuerdos únicos e inolvidables!",
+    tags: [
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "Fiesta",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "recuerdos",
+        color: "green-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: graduacion,
+    source_code_link: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODgxODI2NjYzNzE5MjY2?story_media_id=2988427146774640548_53122987259&igshid=NmJiYWZiY2E0Mg==",
   },
 ];
 
