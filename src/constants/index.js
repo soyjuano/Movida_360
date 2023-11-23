@@ -71,7 +71,7 @@ const services = [
   },
 ];
 
-const technologies = [
+/* const technologies = [    ////// SECCION BALLS ANULADAS   ///////////
   {
     name: "HTML 5",
     icon: html,
@@ -124,7 +124,7 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-];
+]; */
 
 const experiences = [
   {
@@ -185,26 +185,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Ustedes son unos genios, nosotros felices al ver estos videos una y otra vez. Los invitados copados nivel mil!!. Gracias poe ser parte de una noche que guardaremos para siempre.",
+    name: "Carolina Valerio",
+    designation: "",
+    company: "Instagram",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Tremendo !!! Los volvería a contratar Movida 360 !!! Muchas gracias por todo !!! ❤😍🎉.",
+    name: "Joselo_ok",
+    designation: "",
+    company: "Instagram",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Increíble experiencia con Movida 360 en La Baguala. Estuve en ese casamiento. Buena la Plataforma! 👏👏",
+    name: "roxii_brito",
+    designation: "",
+    company: "Instagram",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -280,4 +280,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, /* technologies, */ experiences, testimonials, projects };
