@@ -1,9 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
-/* import camera360 from "./assets/camera360.mp4" */
-
-import { ToastContainer, toast } from 'react-toastify';
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, Footer } from "./components";
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
@@ -24,6 +21,7 @@ const App = () => {
           <StarsCanvas />
           <ToastContainer style={{ zIndex: 9999 }} />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
