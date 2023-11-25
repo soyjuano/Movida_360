@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import arrow from "./arrow_up_icon.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -12,6 +13,7 @@ import working_icon from "./working_icon.png";
 import web from "./web.png";
 import github from "./github.png";
 import insta from "./insta_icon.png";
+import whatsapp from "./whatsapp_icon.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -45,6 +47,7 @@ import camiygiorgian from "./camiygiorgian.jpg";
 
 export {
   logo,
+  arrow,
   backend,
   creator,
   mobile,
@@ -58,6 +61,7 @@ export {
   web,
   github,
   insta,
+  whatsapp,
   menu,
   close,
   css,

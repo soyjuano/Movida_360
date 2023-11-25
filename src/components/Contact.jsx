@@ -9,6 +9,8 @@ import { slideIn } from "../utils/motion";
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { insta } from "../assets";
+import { whatsapp } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -85,7 +87,37 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Esperamos tu consulta</p>
         <h3 className={styles.sectionHeadText}>Contacto</h3>
-
+        <div className='flex items-center pt-2'>
+  <a
+    href='tel:+59897475211'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='w-8 h-8 object-contain'
+  >
+    <img
+      src={whatsapp}
+      alt='whatsapp'
+      className='w-8 h-8 object-contain'
+    />
+  </a>
+  <p className={`${styles.sectionSubText} ml-4 self-center`}>598 97475211</p>
+</div>
+        
+        <div className='flex items-center pt-6'>
+        <a
+            href='https://www.instagram.com/movida.360/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='w-7 h-7 object-contain'
+          >
+            <img
+              src={insta}
+              alt='instagram'
+              className='w-7 h-7 object-contain'
+            />
+          </a>
+      <p className={`${styles.sectionSubText} ml-4 self-center`}>@movida.360</p>
+    </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
