@@ -3,6 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* estilo de mensaje alert */
+@import 'react-toastify/dist/ReactToastify.css';
+
 
 * {
   margin: 0;

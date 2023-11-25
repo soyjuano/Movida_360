@@ -1,32 +1,28 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
-import camera360 from "./assets/camera360.mp4"
+/* import camera360 from "./assets/camera360.mp4" */
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-
-       {/* Video background for Navbar and Hero */}
-      {/*  <div className="bg-cover bg-no-repeat bg-right-top h-screen relative">
-          <video className="w-full h-full object-cover absolute inset-0" src={camera360} autoPlay loop muted />
-        </div> */}
-
         <div className='relative z-10'>
           <Navbar />
           <Hero />
-
         </div>
-
         <About />
         <Experience />
-       {/*  <Tech /> */} {/*  SECCION BALLS ANULADA */}
         <Works />
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
+          <ToastContainer style={{ zIndex: 9999 }} />
         </div>
       </div>
     </BrowserRouter>

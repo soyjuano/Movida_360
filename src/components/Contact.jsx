@@ -7,6 +7,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -31,23 +34,28 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    /* console.log("Submit button clicked"); // Agrega este console.log */
+
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+       'service_vi3amoy',
+        'template_y2l29tg',
         {
           from_name: form.name,
           to_name: "Movida 360",
           from_email: form.email,
-          to_email: "juanxdnon@gmail.com",
+          to_email: "",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'GbUbqfawogJQMMRcQ',
       )
       .then(
         () => {
           setLoading(false);
-          alert("Gracias. Te responderemos a la brevedad.");
+          toast.success("Gracias. Te responderemos a la brevedad.", {
+            className: 'bg-black-100 text-white',
+            position: toast.POSITION.BOTTOM_RIGHT,
+          });
 
           setForm({
             name: "",
@@ -59,7 +67,10 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, algo salió mal 😢. Por favor intenta nuevamente.");
+          toast.error("Ahh, algo salió mal 😢. Por favor intenta nuevamente.", {
+            className: 'bg-red-500 text-white',
+            position: toast.POSITION.BOTTOM_RIGHT,
+          });
         }
       );
   };
@@ -86,6 +97,7 @@ const Contact = () => {
               type='text'
               name='name'
               value={form.name}
+              required
               onChange={handleChange}
               placeholder="Escribí tu nombre"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border border-y-teal-600 font-medium'
@@ -96,6 +108,7 @@ const Contact = () => {
             <input
               type='email'
               name='email'
+              required
               value={form.email}
               onChange={handleChange}
               placeholder="Cual es tu email?"
@@ -107,6 +120,7 @@ const Contact = () => {
             <textarea
               rows={7}
               name='message'
+              required
               value={form.message}
               onChange={handleChange}
               placeholder='Escribí tu mensaje'
@@ -118,7 +132,7 @@ const Contact = () => {
             type='submit'
             className='bg-quaternary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
-            {loading ? "Enviando..." : "Se envió correctamente 👍"}
+            {loading ? "Enviando..." : "Enviar 🚀"}
           </button>
         </form>
       </motion.div>
