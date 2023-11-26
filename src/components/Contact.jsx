@@ -36,8 +36,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    /* console.log("Submit button clicked"); // Agrega este console.log */
-
     emailjs
       .send(
        'service_vi3amoy',

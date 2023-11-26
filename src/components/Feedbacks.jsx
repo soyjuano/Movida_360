@@ -18,7 +18,7 @@ const FeedbackCard = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-quaternary p-10 rounded-3xl xs:w-[300px] w-full border border-y-teal-600'
   >
-    <p className='text-white font-black text-[48px]'>"</p>  {/* /// comillas dentro del feedback */}
+    <p className='text-white font-black text-[48px]'>"</p> 
 
     <div className='mt-1'>
       <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>

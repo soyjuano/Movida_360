@@ -56,7 +56,7 @@ const About = () => {
         celebración sea épica. ¡Te prometemos que tus recuerdos serán la envidia de todos!
 
         No importa el plan que tengas, estamos listos para convertirlo en algo inolvidable. 
-        <span className='pink-text-gradient mb-10' /* 'text-[#915EFF]' */> ¡Dale un giro a tu fiesta con nosotros!</span>
+        <span className='pink-text-gradient mb-10'> ¡Dale un giro a tu fiesta con nosotros!</span>
        
         <p className={`${styles.heroSubText} mt-12 text-white-100 text-center`}>
             Por qué Elegirnos?
