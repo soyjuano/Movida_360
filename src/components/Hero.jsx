@@ -30,10 +30,10 @@ const Hero = () => {
         className={`absolute inset-x-0 bottom-[80px] max-w-full mx-auto flex gap-5 flex-col items-center justify-center`}
       >
         <div>
-          <h1 className={`${styles.heroHeadText} text-white text-center`}>
+          <h1 className={`${styles.heroHeadText} text-white text-center px-5`}>
             Dale un <span className="pink-text-gradient">giro</span> a tu Fiesta!
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 text-center`}>
+          <p className={`${styles.heroSubText} mt-4 text-white-100 text-center`}>
             Alquiler de plataforma de video 360 para tu evento
           </p>
         </div>

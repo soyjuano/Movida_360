@@ -39,32 +39,29 @@ const About = () => {
   return (
     <section className={`relative w-full min-h-min mx-auto text-center`}>
       <motion.div variants={textVariant()} >
-      <p className= {styles.sectionSubText} >Movida 360</p>
+        <p className={styles.sectionSubText} >Movida 360</p>
         <h2 className={styles.sectionHeadText} >Creadores de recuerdos</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-full leading-[30px] text-center'
-      >
-        ¡Convertimos tus momentos en recuerdos inolvidables que van más allá de las fotos! 
-        Somos especialistas en hacer que tus fiestas sean memorables, ya sea una boda, un cumple, 
-        una feria o un corporativo. ¡Nosotros estamos en todas!
+      <motion.div variants={fadeIn("", "", 0.1, 1)} >
+        <p className='mt-4 text-secondary text-[17px] max-w-full leading-[30px] text-center'>
+          ¡Convertimos tus momentos en recuerdos inolvidables que van más allá de las fotos!
+          Somos especialistas en hacer que tus fiestas sean memorables, ya sea una boda, un cumple,
+          una feria o un corporativo. ¡Nosotros estamos en todas!
 
-        Con nuestra plataforma 360, tu evento se transforma en una experiencia única y súper divertida. 
-        Capturamos todos los ángulos, todos los momentos épicos y todos los detalles que hacen que tu 
-        celebración sea épica. ¡Te prometemos que tus recuerdos serán la envidia de todos!
+          Con nuestra plataforma 360, tu evento se transforma en una experiencia única y súper divertida.
+          Capturamos todos los ángulos, todos los momentos épicos y todos los detalles que hacen que tu
+          celebración sea épica. ¡Te prometemos que tus recuerdos serán la envidia de todos!
 
-        No importa el plan que tengas, estamos listos para convertirlo en algo inolvidable. 
-        <span className='pink-text-gradient mb-10'> ¡Dale un giro a tu fiesta con nosotros!</span>
-       
+          No importa el plan que tengas, estamos listos para convertirlo en algo inolvidable.
+          <span className='pink-text-gradient mb-10'> ¡Dale un giro a tu fiesta con nosotros!</span>
+        </p>
         <p className={`${styles.heroSubText} mt-12 text-white-100 text-center`}>
-            Por qué Elegirnos?
-          </p>
+          Por qué Elegirnos?
+        </p>
+      </motion.div>
 
-      </motion.p>
-
-       <div className='mt-14 flex flex-wrap gap-5 justify-evenly'>
+      <div className='mt-14 flex flex-wrap gap-5 justify-evenly'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
