@@ -7,8 +7,8 @@ const Footer = () => {
     <>
       <div className="w-full px-10 py-5 flex justify-center items-center bg-primary">
         <div className="flex-col justify-center items-center z-20 text-secondary text-[14px] text-center">
-          Copyright © 2023 Movida 360 - Todos los Derechos Reservados - Desarrollado por Juano
-        
+          Copyright © 2024 Movida 360 - Todos los Derechos Reservados - Desarrollado por Juano
+
         </div>
 
         <Link
